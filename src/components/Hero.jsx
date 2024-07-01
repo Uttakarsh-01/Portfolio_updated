@@ -1,27 +1,63 @@
 import React from 'react'
 import { HERO_CONTENT } from '../constants';
 import profilePic from "../assets/hero-1.JPG";
+import { motion } from "framer-motion"
+
+const container = (delay) => ({
+  hidden:{x:-100,opaciry:0},
+  visible:{
+    x:0,
+    opacity:1,
+    transition:{duration:0.5,delay:delay},
+  }
+})
+
 const Hero = () => {
   return (
-    <div>
-        <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
-            <div className='flex flex-wrap'>
-                <div className='w-full lg:w1/2'>
-                    <div className='flex flex-col items-center lg:items-start'>
-                        <h1 className='pb-14 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl '>👋 Hello, I'm Priyanshu Panda!</h1>
-                        <span className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent px-20'>Software Developer</span>
-                        <p className='my-2 max-w-xl px-20 py-6 font-light tracking-tighter justify-around'>{HERO_CONTENT}</p>
-                    </div>
-                </div>
-                <div className='w-full lg:w-1/2 lg:p-8'>
-                    <div className='flex justify-center'>
-                        <img src={profilePic} alt="Priyanshu Panda"/>
-                    </div>
-                </div>
+    <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
+      <div className='flex flex-wrap p-10'>
+      {/* Left side content */}
+        <div className='w-full lg:w-1/2'>
+          <div className='flex flex-col items-center lg:items-start lg:pl-16'>
+            <motion.h1 variants={container(0.5)}
+            initial="hidden"
+            animate="visible"
+             className='pb-14 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl hover:underline decoration-violet-500 transition duration-700 ease-in-out'>
+               Priyanshu Panda
+            </motion.h1>
+            <motion.span variants={container(1)}
+            initial="hidden"
+            animate="visible" className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent px-3'>
+              Software Developer
+            </motion.span>
+            <motion.p
+              variants={container(1.5)}
+            initial="hidden"
+            animate="visible"
+             className='my-2 max-w-xl px-4 py-6 font-normal text-justify tracking-tighter'>
+              {HERO_CONTENT}
+            </motion.p>
+            <div className='px-4'> 
+            <motion.button variants={container(1.5)}
+            initial="hidden"
+            animate="visible" className='rounded-md border my-2 px-4 py-4 border-blue-900  bg-gradient-to-r from-cyan-900 to-blue-800 hover:from-purple-900 hover:to-pink-800'>Download CV</motion.button>
             </div>
+          </div>
         </div>
+        
+        {/* Right side image */}
+        <div className='w-full lg:w-1/2 lg:p-3'>
+          <div className='flex justify-center lg:justify-end'>
+            <motion.img 
+            initial={{x:100,opacity:0}}
+            animate={{x:0,opacity:1}} 
+            transition={{duration:1,delay:1.2}}
+            src={profilePic} alt="Priyanshu Panda" className='max-w-xs lg:max-w-md h-auto rounded-2xl  cursor-pointer  hover:scale-110' />
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

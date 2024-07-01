@@ -38,9 +38,11 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <div className='px-4'> 
+            <a href='https://drive.google.com/file/d/1TKLLRQs0gfiCRngDRHas6luPEci7Do6y/view' target='_blank'> 
             <motion.button variants={container(1.5)}
             initial="hidden"
             animate="visible" className='rounded-md border my-2 px-4 py-4 border-blue-900  bg-gradient-to-r from-cyan-900 to-blue-800 hover:from-purple-900 hover:to-pink-800'>Download CV</motion.button>
+            </a>
             </div>
           </div>
         </div>

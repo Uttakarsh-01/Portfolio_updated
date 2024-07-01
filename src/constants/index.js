@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     role: "Software Developer Intern",
     company: "DePronto Infotech.",
     description: `I've contributed to various projects for major private banks in India, focusing on resolving issues promptly to maintain high client satisfaction. By optimizing code and writing efficient scripts, I improved application performance by up to 30%. I maintain open communication with clients to understand and meet their evolving needs.`,
-    technologies: ["Javascript", "jQuery", "MSSQL","ReactJs", "PHP Frameworks"],
+    technologies: ["Javascript","MSSQL","ReactJs", "Zend"],
   },
   {
     year: "Oct 2022 - Dec 2022",

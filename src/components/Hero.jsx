@@ -27,17 +27,17 @@ const Hero = () => {
             </motion.h1>
             <motion.span variants={container(1)}
             initial="hidden"
-            animate="visible" className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent px-2'>
+            animate="visible" className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
               Software Developer
             </motion.span>
             <motion.p
               variants={container(1.5)}
             initial="hidden"
             animate="visible"
-             className='my-2 max-w-xl px-4 font-normal text-justify tracking-tighter'>
+             className='my-2 max-w-xl  font-normal text-justify tracking-tighter'>
               {HERO_CONTENT}
             </motion.p>
-            <div className='px-4'> 
+            <div className='px-2'> 
             <a href='https://drive.google.com/file/d/1TKLLRQs0gfiCRngDRHas6luPEci7Do6y/view' target='_blank'> 
             <motion.button variants={container(1.5)}
             initial="hidden"

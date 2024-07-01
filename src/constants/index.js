@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     role: "Software Developer Intern",
     company: "DePronto Infotech.",
     description: `I've contributed to various projects for major private banks in India, focusing on resolving issues promptly to maintain high client satisfaction. By optimizing code and writing efficient scripts, I improved application performance by up to 30%. I maintain open communication with clients to understand and meet their evolving needs.`,
-    technologies: ["Javascript", "jQuery", "MSSQL","Docker","ReactJs", "PHP Frameworks"],
+    technologies: ["Javascript", "jQuery", "MSSQL","ReactJs", "PHP Frameworks"],
   },
   {
     year: "Oct 2022 - Dec 2022",
@@ -25,7 +25,7 @@ export const EXPERIENCES = [
     company: "Smartbridge",
     description: `Completed an eight-week online internship with SmartBridge, in collaboration with AICTE. My tasks included completing modules on the Trailhead platform, where I successfully finished all trails. I earned the Apex Specialist Badge and Process Automation Specialist Super Badge, gaining practical skills in Salesforce CRM through hands-on learning.`,
 
-    technologies: ["Salesforce", "Trailshead", "Apex", "Salesforce Lightning"],
+    technologies: ["Salesforce", "Trailshead", "Apex"],
   },
   {
     year: "May 2022 - June 2022",
@@ -33,7 +33,7 @@ export const EXPERIENCES = [
     company: "Lagozon Edtech Private Limited",
     description: `Completed a six-week training and internship program where I received training in MySQL, focusing on topics like Joins, relations, and basic commands. I acquired knowledge of Power BI, including various visualizations, and learned about DAX functions and Power Query. I  implemented machine learning algorithms within the Power BI, and successfully presented a project based on these topics.`,
 
-    technologies: ["Python", "PowerBI", "Machine Learning","SQL"],
+    technologies: ["Python", "PowerBI", "ML","SQL"],
   }
 
 ];

@@ -15,7 +15,7 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
-      <div className='flex flex-wrap p-10'>
+      <div className='flex flex-wrap p-8'>
       {/* Left side content */}
         <div className='w-full lg:w-1/2'>
           <div className='flex flex-col items-center lg:items-start lg:pl-16'>
@@ -27,14 +27,14 @@ const Hero = () => {
             </motion.h1>
             <motion.span variants={container(1)}
             initial="hidden"
-            animate="visible" className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent px-3'>
+            animate="visible" className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent px-2'>
               Software Developer
             </motion.span>
             <motion.p
               variants={container(1.5)}
             initial="hidden"
             animate="visible"
-             className='my-2 max-w-xl px-4 py-6 font-normal text-justify tracking-tighter'>
+             className='my-2 max-w-xl px-4 font-normal text-justify tracking-tighter'>
               {HERO_CONTENT}
             </motion.p>
             <div className='px-4'> 

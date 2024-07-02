@@ -19,6 +19,7 @@ Welcome to my portfolio! This project showcases my skills and experience in web 
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A build tool that provides a fast development environment.
 - **FramerMotion**: A library for creating animations and interactions.
+- **Tailwind CSS**: An utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.
 
 
 ## 🤝 Contributions

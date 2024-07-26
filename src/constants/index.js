@@ -72,7 +72,7 @@ export const PROJECTS = [
     image: project3,
     description:
       "Created a user-friendly web app to predict Diabetes, Heart Disease, and Parkinson's Disease. The app is deployed online using Streamlit and employs various machine learning algorithms to provide accurate predictions.",
-    technologies: ["HTML", "Tailwind Css", "React",],
+    technologies: ["Python", "Machine Learning", "Streamlit",],
     github : "https://github.com/thegeek36/Multiple-Disease-Prediction",
     live : "#" ,
   },

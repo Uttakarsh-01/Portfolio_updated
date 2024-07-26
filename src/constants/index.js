@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
+import project5 from "../assets/projects/project5.png";
 
 export const HERO_CONTENT = `I'm a passionate Computer Science and Engineering student, graduated from Gandhi Institute for Engineering and Technology in Gunupur, with a strong academic background and a zest for innovation.I'm excited to share my journey and projects with you, reflecting my dedication to creating impactful solutions and pushing the boundaries of what's possible in the tech world. 🚀`;
 
@@ -39,6 +40,15 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title:"Paisa Planner",
+    image: project5,
+    description:
+    "PaisaPlanner is a web application aimed at simplifying expense management. It provides users with tools to track income, categorize expenses, and visualize financial data through intuitive dashboards.",
+    technologies:["React","NodeJs","MongoDB","ExpressJs","Vercel","Renderer"],
+    github:"https://github.com/thegeek36/PaisaPlanner",
+    live:"https://paisa-planner.vercel.app/"
+  },
   {
     title: "Bharataya Rescue",
     image: project1,

@@ -39,6 +39,30 @@ export const EXPERIENCES = [
 
 ];
 
+export const EDUCATION = [
+  {
+    degree: "Bachelors of Technology in Computer Science and Engineering",
+    institution: "GIET University",
+    duration: "Nov 2020 - June 2024",
+    description:
+      "Graduated with a deep understanding of core computer science fundamentals. Explored a wide range of topics including coding, app development, web development, and machine learning. Lived away from home in a hostel, where I made lasting friendships and created wonderful memories",
+  },
+  {
+    degree: "12th Science",
+    institution: "Deepika English Medium School,CBSE",
+    duration: "June 2018 - May 2020",
+    description:
+      "Studied Physics, Chemistry, Mathematics, and Computer Science with a focus on C++. Developed a growing interest in programming, enjoyed memorable trips with friends, and cherished the final moments of school life.",
+  },
+  {
+    degree: "Primary School",
+    institution: "Deepika English Medium School,CBSE",
+    duration: "April 2008 - May 2018",
+    description:
+      "Gained a solid foundation across all subjects while growing from a curious child into a motivated young adult. Embraced a wide range of activities, including quizzes, Taekwondo, and other extracurriculars, which enriched my learning experience and personal development.",
+  },
+]; 
+
 export const PROJECTS = [
   {
     title:"Paisa Planner",

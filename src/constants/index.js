@@ -4,13 +4,15 @@ import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
 
-export const HERO_CONTENT = `I'm a passionate Computer Science and Engineering student, graduated from Gandhi Institute for Engineering and Technology in Gunupur, with a strong academic background and a zest for innovation.I'm excited to share my journey and projects with you, reflecting my dedication to creating impactful solutions and pushing the boundaries of what's possible in the tech world. 🚀`;
+export const HERO_CONTENT = `I am a passionate Computer Science and Engineering graduate with a strong academic background and a zest for innovation. Join me as I share my projects and experiences, showcasing my dedication to creating impactful solutions and pushing the boundaries of what's possible in the tech world. `;
 
-export const ABOUT_TEXT = `Hello! I’m a passionate Computer Science and Engineering graduate from GIET University  in Gunupur,Odisha,maintaining a CGPA of 8.91. My education has equipped me with a solid foundation in both theoretical and practical aspects of computer science.
+export const ABOUT_TEXT = `Hello! I’m a passionate Computer Science and Engineering graduate from GIET University in Gunupur, Odisha. My journey into programming started in class 10 when I learned C++. This sparked my curiosity about how software works and led me to pursue engineering.
 
-Proficient in Python, C/C++, JavaScript, and PHP, with hands-on experience in web development using Django and Flask frameworks. Skilled in machine learning libraries like TensorFlow, scikit-learn, NumPy, and pandas.Familiar with HTML/CSS for frontend development and proficient in SQL and Firebase for database management. Additionally, often practice coding questions on various platforms and a adept problem solver.
+I have a strong foundation in programming languages like Python, C/C++, JavaScript, and PHP. I enjoy web development using frameworks like Django and Flask. I also have experience with machine learning tools and frontend development using HTML/CSS. Additionally, I work with databases like SQL and Firebase.
 
-I have gained hands-on experience through internships, including my role as a Software Developer Intern at DePronto Infotech, where I worked on projects for leading private banks in India.I actively participate in coding challenges on platforms like LeetCode and HackerRank, where I have solved over 250 problems and achieved a 5-star rating. I am also involved in extracurricular activities and hold certifications like AWS Cloud Practitioner Essentials.`;
+I’ve gained practical experience as a Software Developer Intern at DePronto Infotech, where I worked on projects for private banks in India. I enjoy solving coding challenges on platforms like LeetCode and HackerRank, where I have solved over 250 problems. I’m always eager to learn and explore new areas in software development.
+
+I also participate in extracurricular activities and hold certifications like AWS Cloud Practitioner Essentials.`;
 
 export const EXPERIENCES = [
   {

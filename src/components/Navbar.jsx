@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className='flex flex-shrink-0 items-center '>
                 <h2 className='text-white mx-1  text-2xl font-bold'>Priyanshu</h2>
             </div>
-            <div className='m-8 flex items-center  justify-right gap-4 text-2xl '>
+            {/* <div className='m-8 flex items-center  justify-right gap-4 text-2xl '>
             <a href="https://www.linkedin.com/in/priyanshu-panda/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className='text-white transition ease-in-out delay-100 hover:-translate-y-1'></FaLinkedin>
               </a>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <a href="https://x.com/that_tallguy_1" target="_blank" rel="noopener noreferrer"> 
                 <BsTwitterX className='text-white transition ease-in-out delay-100 hover:-translate-y-2'></BsTwitterX> </a>
 
-            </div>
+            </div> */}
         </nav>
     </div>
   )

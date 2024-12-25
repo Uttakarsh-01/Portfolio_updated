@@ -105,7 +105,7 @@ const ContactForm = () => {
         transition={{ duration: 0.5 }}
         className='my-20 text-center text-4xl'
       >
-        Let's <span className='text-neutral-500'>Connect</span>.
+        🎅Let's <span className='text-neutral-500'>Connect</span>. 🌲
       </motion.h1>
       <div className="max-w-2xl mx-auto mt-10 p-4 sm:p-6 rounded-lg bg-gray-500 bg-opacity-20 backdrop-filter backdrop-blur-lg">
   <form onSubmit={handleSubmit} className="space-y-4">

@@ -3,7 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import '@fontsource/dancing-script/700.css';
+@import '@fontsource/inter/600.css'; /* Optional: for a clean sans-serif */
 :root{
     font-family: "Popins",sans-serif;
 }

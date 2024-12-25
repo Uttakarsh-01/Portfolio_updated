@@ -1,36 +1,95 @@
-import React from 'react'
-import '../index.css';
-import { FaLinkedin } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { LiaExternalLinkAltSolid } from "react-icons/lia";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { label: 'Home', to: '/' },
+    { label: 'About Me', to: '/about' },
+    { label: 'Education', to: '/education' },
+    { label: 'Tech', to: '/technologies' },
+    { label: 'Experience', to: '/experience' },
+    { label: 'Projects', to: '/projects' },
+    { label: 'Contact', to: '/contact' }
+  ];
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div>
-        <nav className='mb-20 flex items-center justify-between py-6'>
-            <div className='flex flex-shrink-0 items-center '>
-                <h2 className='text-white mx-1  text-2xl font-bold'>Priyanshu</h2>
+    <div className="w-full">
+      {/* Main Navigation */}
+      <nav className='w-full flex items-center justify-between py-5 bg-black bg-opacity-95 backdrop-blur-sm'>
+        <div className='flex flex-shrink-0 items-center'>
+          <h2 className='text-white mx-1 text-2xl font-bold'>🌲Priyanshu🎅</h2>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <div className='md:hidden'>
+          <button 
+            onClick={toggleMenu} 
+            className='text-white focus:outline-none'
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className='hidden md:flex space-x-4 items-center'>
+          {navItems.map((item, index) => (
+            <Link 
+              key={index} 
+              to={item.to} 
+              className='text-neutral-300 hover:text-white transition-colors'
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div className='absolute top-full left-0 w-full bg-black/90 md:hidden'>
+            <div className='flex flex-col items-center space-y-4 py-6'>
+              {navItems.map((item, index) => (
+                <Link
+                  key={index} 
+                  to={item.to} 
+                  className='text-neutral-300 hover:text-white'
+                  onClick={toggleMenu}
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
-            {/* <div className='m-8 flex items-center  justify-right gap-4 text-2xl '>
-            <a href="https://www.linkedin.com/in/priyanshu-panda/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className='text-white transition ease-in-out delay-100 hover:-translate-y-1'></FaLinkedin>
-              </a>
-              <a href="https://leetcode.com/u/its_priyanshu/" target="_blank" rel="noopener noreferrer"> 
-                <LiaExternalLinkAltSolid className='text-white transition ease-in-out delay-100 hover:-translate-y-1 '></LiaExternalLinkAltSolid>
-                </a>
-                <a href="https://www.instagram.com/priyanshuupanda__" target="_blank" rel="noopener noreferrer"> 
-                <FaInstagram className='text-white transition ease-in-out delay-100 hover:-translate-y-1'></FaInstagram></a>
-                <a href="https://github.com/thegeek36" target="_blank" rel="noopener noreferrer"> 
-                <FaGithub className='text-white transition ease-in-out delay-100 hover:-translate-y-1'></FaGithub> </a>
-                <a href="https://x.com/that_tallguy_1" target="_blank" rel="noopener noreferrer"> 
-                <BsTwitterX className='text-white transition ease-in-out delay-100 hover:-translate-y-2'></BsTwitterX> </a>
+          </div>
+        )}
+      </nav>
 
-            </div> */}
-        </nav>
+      {/* Separate Animated Border Image */}
+      <motion.div 
+        className="w-full h-20"
+        style={{
+          backgroundImage: `url('/src/assets/UnderlineXmas.png')`,
+          backgroundSize: 'auto 100%',
+          backgroundRepeat: 'repeat-x',
+          backgroundPosition: 'center'
+        }}
+        animate={{
+          y: [0, -5, 0]
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

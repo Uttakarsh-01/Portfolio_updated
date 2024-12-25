@@ -115,6 +115,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Rourkela,Odisha,India",
-  phoneNo: "+91 9938082211",
+  phoneNo: "+91 9090xxxxxx",
   email: "priyanshupanda36@gmail.com",
 };

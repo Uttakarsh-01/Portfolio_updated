@@ -16,7 +16,14 @@ I also participate in extracurricular activities and hold certifications like AW
 
 export const EXPERIENCES = [
   {
-    year: "Dec 2023 - April 2024",
+    year: "Oct 2024 - Present",
+    role: "Associate Software Engineer",
+    company: "Accenture Technology",
+    description: `Onboarded as a Junior Software Engineer and trained on MS Azure Services.Looking forward to learn and grow`,
+    technologies: ["Data Pipelines","Azure Storage","Python", "SQL"],
+  },
+  {
+    year: "Dec 2023 - May 2024",
     role: "Software Developer Intern",
     company: "DePronto Infotech.",
     description: `I've contributed to various projects for major private banks in India, focusing on resolving issues promptly to maintain high client satisfaction. By optimizing code and writing efficient scripts, I improved application performance by up to 30%. I maintain open communication with clients to understand and meet their evolving needs.`,
@@ -47,7 +54,7 @@ export const EDUCATION = [
     institution: "GIET University",
     duration: "Nov 2020 - June 2024",
     description:
-      "Graduated with a deep understanding of core computer science fundamentals. Explored a wide range of topics including coding, app development, web development, and machine learning. Lived away from home in a hostel, where I made lasting friendships and created wonderful memories",
+      "Graduated with a  understanding of core computer science fundamentals. Explored a wide range of topics including coding, app development, web development, and machine learning. Lived away from home in a hostel, where I made lasting friendships and created wonderful memories",
   },
   {
     degree: "12th Science",
@@ -114,7 +121,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Rourkela,Odisha,India",
+  address: "Banglore,India",
   phoneNo: "+91 9090xxxxxx",
-  email: "priyanshupanda36@gmail.com",
+  email: "priyanshu.panda.tech@gmail.com",
 };

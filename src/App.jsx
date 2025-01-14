@@ -12,35 +12,8 @@ import Footer from './components/Footer'
 import Education from './components/Education'
 import Blogs from './components/Blogs'
 import { Analytics } from "@vercel/analytics/react"
-import song1 from './assets/song1.mp3';
-import song2 from './assets/song2.mp3';
-import song3 from './assets/song3.mp3';
 
 function App() {
-
-  useEffect(() => {
-    // Array of song file paths (ensure these paths are correct and accessible in your project)
-    const songs = [
-      song1
-    ];
-    const randomIndex = Math.floor(Math.random() * songs.length);
-    const selectedSong = songs[randomIndex];
-    const audio = new Audio(selectedSong);
-
-    // Function to play audio
-    const playAudio = () => {
-      audio.play();
-    };
-
-    // Add event listener for user interaction
-    document.addEventListener('click', playAudio, { once: true });
-        // Cleanup function
-        return () => {
-          audio.pause();
-          audio.currentTime = 0;
-        };
-      }, []);
-
 
   return (
     <div className='overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900'>

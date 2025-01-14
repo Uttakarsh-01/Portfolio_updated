@@ -26,7 +26,7 @@ const Footer = () => {
                         animate={{ scale: [1, 1.2, 1] }} 
                         transition={{ repeat: Infinity, duration: 1.5 }}>
                         ❤
-                    </motion.span> by Priyanshu 🎅 Merry Christmas
+                    </motion.span> by Priyanshu 
                 </p>
                 
                 <div className="flex justify-center space-x-6 text-white mb-6">

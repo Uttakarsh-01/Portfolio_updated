@@ -24,7 +24,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
              className='pb-14 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl hover:underline decoration-violet-500 transition duration-700 ease-in-out'>
-              Priyanshu Panda🎅
+              Priyanshu Panda
             </motion.h1>
             
             <motion.span variants={container(1)}
@@ -39,13 +39,13 @@ const Hero = () => {
              className='my-2 max-w-xl  font-normal text-justify tracking-tighter'>
               {HERO_CONTENT}
             </motion.p>
-            <div className='px-2'> 
+            {/* <div className='px-2'> 
             <a href='https://drive.google.com/file/d/1TKLLRQs0gfiCRngDRHas6luPEci7Do6y/view' target='_blank'> 
             <motion.button variants={container(1.5)}
             initial="hidden"
             animate="visible" className='rounded-md border my-2 px-4 py-4 border-blue-900  bg-gradient-to-r from-cyan-900 to-blue-800 hover:from-purple-900 hover:to-pink-800'>Download CV</motion.button>
             </a>
-            </div>
+            </div> */}
           </div>
         </div>
         

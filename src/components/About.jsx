@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 const About = () => {
   return (
     <div  className='border-b border-neutral-900 pb-4'>
-    <h1 className='my-20 text-center text-4xl'> 🎅About
-         <span className='text-neutral-500'> Me.🎄
+    <h1 className='my-20 text-center text-4xl'> 🪁About
+         <span className='text-neutral-500'> Me.☀️
         </span>
         </h1>
     <div  className='flex flex-wrap'>
@@ -15,7 +15,7 @@ const About = () => {
                initial={{opacity:0,x:-100}}
                transition={{duration:0.5}} 
              className='flex items-center justify-center'>
-                <img src = {aboutImg} alt='About' className='max-w-xs lg:max-w-md h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110'></img>
+                <img src = {aboutImg} alt='About' className='max-w-[200px] lg:max-w-[300px] h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110'></img>
             </motion.div>
             </div>
             <div className='w-full lg:w-1/2 '>

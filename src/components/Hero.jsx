@@ -73,7 +73,7 @@ const Hero = () => {
       <img 
         src={profilePic} 
         alt="Priyanshu Panda" 
-        className='max-w-xs lg:max-w-md h-auto rounded-2xl  hover:scale-110 focus:outline-none focus-visible:outline-none'
+        className='max-w-xs lg:max-w-s h-auto rounded-2xl  hover:scale-110 focus:outline-none focus-visible:outline-none'
       />
       
       {/* Santa Hat */}

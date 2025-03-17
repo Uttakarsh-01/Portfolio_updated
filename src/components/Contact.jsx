@@ -54,10 +54,10 @@ const ContactForm = () => {
       };
 
       await emailjs.send(
-        'service_98tw0xc',
-        'template_as6sjil',
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Service ID
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Template ID
         templateParams,
-        'LKJg32gTvTg56DrCk'
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Public Key
       );
 
       setFormData({ name: '', email: '', message: '' });

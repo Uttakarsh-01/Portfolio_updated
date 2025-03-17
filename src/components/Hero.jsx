@@ -77,7 +77,7 @@ const Hero = () => {
       />
       
       {/* Santa Hat */}
-      <motion.img 
+      {/* <motion.img 
         src={santaHat}
         alt="Santa Hat"
         className="absolute size-44  scale-10  -top-12 -right-14 transform rotate-10" // Adjusted size and position
@@ -91,7 +91,7 @@ const Hero = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-      />
+      /> */}
     </motion.div>
   </div>
 </div>

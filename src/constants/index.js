@@ -4,124 +4,75 @@ import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
 
-export const HERO_CONTENT = `I am a passionate Computer Science and Engineering graduate with a strong academic background and a zest for innovation. Join me as I share my projects and experiences, showcasing my dedication to creating impactful solutions and pushing the boundaries of what's possible in the tech world. `;
+export const HERO_CONTENT = `A dedicated web developer in India, honing expertise in building dynamic and scalable web applications using the MERN stack. Continuously practicing and exploring advanced technologies to deliver modern and efficient solutions.`;
 
-export const ABOUT_TEXT = `Hello! I’m a passionate Computer Science and Engineering graduate from GIET University in Gunupur, Odisha. My journey into programming started in class 10 when I learned C++. This sparked my curiosity about how software works and led me to pursue engineering.
-
-I have a strong foundation in programming languages like Python, C/C++, JavaScript, and PHP. I enjoy web development using frameworks like Django and Flask. I also have experience with machine learning tools and frontend development using HTML/CSS. Additionally, I work with databases like SQL and Firebase.
-
-I’ve gained practical experience as a Software Developer Intern at DePronto Infotech, where I worked on projects for private banks in India. I enjoy solving coding challenges on platforms like LeetCode and HackerRank, where I have solved over 250 problems. I’m always eager to learn and explore new areas in software development.
-
-I also participate in extracurricular activities and hold certifications like AWS Cloud Practitioner Essentials.`;
+export const ABOUT_TEXT = `Started exploring web development in the 1st year, building a strong foundation in HTML, CSS, and JavaScript. Progressed to mastering Tailwind and React while developing dynamic and responsive projects. By mid-2nd year, gained hands-on experience with the MERN stack, focusing on creating full-stack applications. Actively integrated AI and explored advanced frameworks like Next.js for optimized solutions. Continuously enhancing skills to build impactful and scalable web applications.`;
 
 export const EXPERIENCES = [
   {
-    year: "Oct 2024 - Present",
-    role: "Associate Software Engineer",
-    company: "Accenture Technology",
-    description: `Onboarded as a Junior Software Engineer and trained on MS Azure Services.Looking forward to learn and grow`,
-    technologies: ["Data Pipelines","Azure Storage","Python", "SQL"],
+    year: " 2025 - Present Coordinator",
+    company: "Cp Byte",
+    description: `Promoted to Web Development Coordinator in 2nd year, mentoring juniors by sharing my expertise and project insights. Guiding them through coding best practices, project development, and modern web technologies. `,
+    technologies: ["Express Js","Node Js","Mongodb", "React Js","Tailwind Css","Javascript","Java","Html & Css","Render","firebase","Vercel","Github"],
   },
-  {
-    year: "Dec 2023 - May 2024",
-    role: "Software Developer Intern",
-    company: "DePronto Infotech.",
-    description: `I've contributed to various projects for major private banks in India, focusing on resolving issues promptly to maintain high client satisfaction. By optimizing code and writing efficient scripts, I improved application performance by up to 30%. I maintain open communication with clients to understand and meet their evolving needs.`,
-    technologies: ["Javascript","MSSQL","ReactJs", "Zend"],
-  },
-  {
-    year: "Oct 2022 - Dec 2022",
-    role: "Salesforce Developer Intern (AICTE Virual Internship)",
-    company: "Smartbridge",
-    description: `Completed an eight-week online internship with SmartBridge, in collaboration with AICTE. My tasks included completing modules on the Trailhead platform, where I successfully finished all trails. I earned the Apex Specialist Badge and Process Automation Specialist Super Badge, gaining practical skills in Salesforce CRM through hands-on learning.`,
 
-    technologies: ["Salesforce", "Trailshead", "Apex"],
-  },
-  {
-    year: "May 2022 - June 2022",
-    role: "Data Analyst Intern",
-    company: "Lagozon Edtech Private Limited",
-    description: `Completed a six-week training and internship program where I received training in MySQL, focusing on topics like Joins, relations, and basic commands. I acquired knowledge of Power BI, including various visualizations, and learned about DAX functions and Power Query. I  implemented machine learning algorithms within the Power BI, and successfully presented a project based on these topics.`,
-
-    technologies: ["Python", "PowerBI", "ML","SQL"],
-  }
 
 ];
 
 export const EDUCATION = [
+
   {
-    degree: "Bachelors of Technology in Computer Science and Engineering",
-    institution: "GIET University",
-    duration: "Nov 2020 - June 2024",
-    description:
-      "Graduated with a  understanding of core computer science fundamentals. Explored a wide range of topics including coding, app development, web development, and machine learning. Lived away from home in a hostel, where I made lasting friendships and created wonderful memories",
-  },
-  {
-    degree: "12th Science",
-    institution: "Deepika English Medium School,CBSE",
+    degree: "12th PCM",
+    institution: "Army Public School,CBSE",
     duration: "June 2018 - May 2020",
     description:
-      "Studied Physics, Chemistry, Mathematics, and Computer Science with a focus on C++. Developed a growing interest in programming, enjoyed memorable trips with friends, and cherished the final moments of school life.",
+      "Studied Physics, Chemistry, Mathematics, and Information Practices with a focus on py. Developed a growing interest in programming, enjoyed memorable trips with friends, and cherished the final moments of school life.",
   },
+
+
   {
-    degree: "Primary School",
-    institution: "Deepika English Medium School,CBSE",
-    duration: "April 2008 - May 2018",
+    degree: "Bachelors of Technology in Computer Science and Engineering",
+    institution: "Kiet group of Institutions",
+    duration: "Undergrad - Aug 2023 - Aug 2027",
     description:
-      "Gained a solid foundation across all subjects while growing from a curious child into a motivated young adult. Embraced a wide range of activities, including quizzes, Taekwondo, and other extracurriculars, which enriched my learning experience and personal development.",
+      "An undergraduate at KIET Group of Institutions, currently in 2nd year with Cgpa of 8.5, gaining expertise in coding, web development, DSA, and various college domains. Actively exploring technologies to enhance skills and knowledge across multiple fields.",
   },
+
 ]; 
 
 export const PROJECTS = [
   {
-    title:"Paisa Planner",
+    title:"Ping Me",
     image: project5,
     description:
-    "PaisaPlanner is a web application aimed at simplifying expense management. It provides users with tools to track income, categorize expenses, and visualize financial data through intuitive dashboards.",
-    technologies:["React","NodeJs","MongoDB","ExpressJs","Vercel","Renderer"],
-    github:"https://github.com/thegeek36/PaisaPlanner",
-    live:"https://paisa-planner.vercel.app/"
+    "A real-time messaging app built with MERN stack and WebSockets, enabling seamless one-on-one. It features secure authentication, media sharing, and instant notifications. Users can personalize profiles and experience a responsive, intuitive interface. Perfect for staying connected anytime, anywhere!",
+    technologies:["React","NodeJs","MongoDB","ExpressJs","Render","DaisyUi"],
+    github:"https://github.com/uttakarsh-01",
+    live:"https://ping-me-3dt3.onrender.com/"
   },
   {
-    title: "Bharataya Rescue",
+    title: "Smart-Waste-Management",
     image: project1,
     description:
-      "An innovative project designed to reunite missing individuals with their loved ones. Built using latest face recognition technology, it ensures an efficient and seamless user experience. The project also features notification functionality to alert users if a missing person is found.",
-    technologies: ["HTML", "CSS", "Javascript", "OpenCV", "Django","Sqlite"],
-    github : "https://github.com/thegeek36/Missing-Person-Detection-System",
+      " cutting-edge solution leveraging IoT, AR/VR, and Blockchain to optimize waste management. IoT sensors monitor waste levels in real-time, triggering timely collection and reducing overflow. AR/VR provides interactive insights for efficient route planning and waste segregation. Blockchain ensures secure, tamper-proof records, enhancing transparency and accountability",
+    technologies: ["HTML", "CSS", "Javascript", "BlockChain", "ReactJs","expressJs"],
+    github : "https://github.com/uttakarsh-01",
     live : "#" ,
   },
-  {
-    title: "MyRecipes.com",
-    image: project2,
-    description:
-      "Designed and developed a dynamic web application where food enthusiasts can share and explore a wide variety of delectable recipes. The platform features full CRUD operations, user profiles, and interactive functionalities, including comments and ratings for user engagement.",
-    technologies: ["HTML", "CSS", "sqlite", "Django"],
-    github : "https://github.com/thegeek36/Recipe-App",
-    live : "#" ,
-  },
-  {
-    title: "Multiple Disease Prediction",
-    image: project3,
-    description:
-      "Created a user-friendly web app to predict Diabetes, Heart Disease, and Parkinson's Disease. The app is deployed online using Streamlit and employs various machine learning algorithms to provide accurate predictions.",
-    technologies: ["Python", "Machine Learning", "Streamlit",],
-    github : "https://github.com/thegeek36/Multiple-Disease-Prediction",
-    live : "#" ,
-  },
+
   {
     title: "Portfolio Website",
     image: project4,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "Tailwind Css", "React",],
-    github : "https://github.com/thegeek36/My-React-Portfolio",
-    live : "#" ,
+    technologies: ["HTML", "Tailwind Css", "Js",],
+    github : "https://github.com/uttakarsh-01",
+    live : "https://uttakarshportfolio.vercel.app/" ,
   },
 ];
 
 export const CONTACT = {
-  address: "Banglore,India",
-  phoneNo: "+91 9090xxxxxx",
-  email: "priyanshu.panda.tech@gmail.com",
+  address: "Lucknow,India",
+  phoneNo: "+91 7707xxxxxx",
+  email: "uttakarsh405@gmail.com",
 };

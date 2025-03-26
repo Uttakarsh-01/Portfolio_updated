@@ -1,18 +1,18 @@
 import React from 'react';
 import { RiReactjsLine } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
+// Removed duplicate import of FaNodeJs
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import { TbFileTypeSql } from "react-icons/tb";
-import { SiDjango } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { SiPhp } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
 import { RiFirebaseFill } from "react-icons/ri";
 import { BiLogoCPlusPlus } from "react-icons/bi";
-import { VscAzure } from "react-icons/vsc";
 import { motion } from "framer-motion"
-
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 const iconMove= (duration) => ({
     initial: {y:-10},
     animate : {
@@ -44,14 +44,14 @@ const Technologies = () => {
                     React
                 </span>
             </motion.div>
-            <motion.div variants={iconMove(2.5)}
-                initial="initial"
-                animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
-                <VscAzure className='text-7xl text-blue-500 group-hover:opacity-50'/>
-                <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
-                    MS Azure
-                </span>
-            </motion.div>
+            <motion.div variants={iconMove(1.5)}
+    initial="initial"
+    animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+    <FaGithub className='text-7xl text-white group-hover:opacity-50'/>
+    <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+        GitHub
+    </span>
+</motion.div>
             <motion.div
             variants={iconMove(2)}
                 initial="initial"
@@ -72,30 +72,41 @@ const Technologies = () => {
                     MongoDB
                 </span>
             </motion.div>
-            <motion.div variants={iconMove(2.5)}
-                initial="initial"
-                animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
-                <TbFileTypeSql className='text-7xl text-black-400 group-hover:opacity-50'/>
-                <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
-                    SQL
-                </span>
-            </motion.div>
-            <motion.div variants={iconMove(2)}
-                initial="initial"
-                animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiDjango className='text-7xl text-green-900 group-hover:opacity-50'/>
-                <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
-                    Django
-                </span>
-            </motion.div>
             <motion.div variants={iconMove(1.5)}
-                initial="initial"
-                animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
-                <FaPython className='text-7xl text-grey-400 group-hover:opacity-50'/>
-                <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
-                    Python
-                </span>
-            </motion.div>
+    initial="initial"
+    animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+    <FaHtml5 className='text-7xl text-orange-500 group-hover:opacity-50'/>
+    <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+        HTML
+    </span>
+</motion.div>
+
+<motion.div variants={iconMove(1.5)}
+    initial="initial"
+    animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+    <FaCss3Alt className='text-7xl text-blue-500 group-hover:opacity-50'/>
+    <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+        CSS
+    </span>
+</motion.div>
+
+<motion.div variants={iconMove(1.5)}
+    initial="initial"
+    animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+    <SiVercel className='text-7xl text-white group-hover:opacity-50'/>
+    <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+        Vercel
+    </span>
+</motion.div>
+
+<motion.div variants={iconMove(1.5)}
+    initial="initial"
+    animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+    <SiExpress className='text-7xl text-gray-400 group-hover:opacity-50'/>
+    <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+        Express.js
+    </span>
+</motion.div>
             {/* <motion.div variants={iconMove(2.5)}
                 initial="initial"
                 animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
@@ -104,14 +115,14 @@ const Technologies = () => {
                     PHP
                 </span>
             </motion.div> */}
-            <motion.div variants={iconMove(2)}
+            {/* <motion.div variants={iconMove(2)}
                 initial="initial"
                 animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
                 <FaAws className='text-7xl text-yellow-400 group-hover:opacity-50'/>
                 <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
                     AWS
                 </span>
-            </motion.div>
+            </motion.div> */}
             <motion.div variants={iconMove(1.5)}
                 initial="initial"
                 animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
@@ -120,14 +131,23 @@ const Technologies = () => {
                     Firebase
                 </span>
             </motion.div>
-            <motion.div variants={iconMove(2.5)}
+
+            <motion.div variants={iconMove(1.5)}
+    initial="initial"
+    animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
+    <FaNodeJs className='text-7xl text-green-500 group-hover:opacity-50'/>
+    <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+        Node.js
+    </span>
+</motion.div>
+            {/* <motion.div variants={iconMove(2.5)}
                 initial="initial"
                 animate="animate" className='relative group rounded-2xl border-4 border-neutral-800 p-4'>
                 <BiLogoCPlusPlus className='text-7xl text-neutral-400 group-hover:opacity-50'/>
                 <span className='absolute bottom-8 left-1/2 -translate-x-1/2 translate-y-8 rounded bg-neutral-800 px-2 py-1 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
                     C++
                 </span>
-            </motion.div>
+            </motion.div> */}
         </motion.div>
     </div>
   );
